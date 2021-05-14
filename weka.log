@@ -1,0 +1,584 @@
+2020-04-15 02:17:05 weka.gui.GUIChooserApp main
+INFO: Logging started
+2020-04-15 02:17:07 weka.gui.GenericObjectEditor registerEditors
+INFO: ---Registering Weka Editors---
+2020-04-15 02:17:08 weka.experiment.DatabaseUtils initialize
+WARNING: Trying to add database driver (JDBC): jdbc.idbDriver - Warning, not in CLASSPATH?
+2020-04-15 02:17:08 weka.gui.beans.BeansProperties loadProperties
+INFO: [KnowledgeFlow] Loading properties and plugins...
+2020-04-15 02:17:08 weka.gui.beans.KnowledgeFlowApp init
+INFO: [KnowledgeFlow] Initializing KF...
+2020-04-15 02:17:39 weka.gui.explorer.Explorer <init>
+INFO: Weka Explorer
+2020-04-15 02:17:39 weka.gui.explorer.Explorer <init>
+INFO: (c) 1999-2019 The University of Waikato, Hamilton, New Zealand
+2020-04-15 02:17:39 weka.gui.explorer.Explorer <init>
+INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
+2020-04-15 02:17:39 weka.gui.explorer.Explorer <init>
+INFO: Started on Wednesday, 15 April 2020
+2020-04-15 02:18:50 weka.gui.explorer.PreprocessPanel$21 run
+INFO: Base relation is now new-vertical-dataset (100 instances)
+2020-04-15 02:20:54 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Started weka.classifiers.rules.ZeroR
+2020-04-15 02:20:54 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Command: weka.classifiers.rules.ZeroR 
+2020-04-15 02:20:54 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Finished weka.classifiers.rules.ZeroR
+2020-04-15 02:21:03 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Started weka.classifiers.rules.ZeroR
+2020-04-15 02:21:03 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Command: weka.classifiers.rules.ZeroR 
+2020-04-15 02:21:03 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Finished weka.classifiers.rules.ZeroR
+2020-04-15 02:22:20 weka.gui.explorer.ClustererPanel$17 run
+INFO: Started weka.clusterers.FilteredClusterer
+2020-04-15 02:22:20 weka.gui.explorer.ClustererPanel$17 run
+INFO: Command: weka.clusterers.FilteredClusterer -F "weka.filters.AllFilter " -W weka.clusterers.SimpleKMeans -- -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+weka.core.UnsupportedAttributeTypeException: weka.clusterers.SimpleKMeans: Cannot handle string attributes!
+	weka.core.Capabilities.test(Capabilities.java:1095)
+	weka.core.Capabilities.test(Capabilities.java:974)
+	weka.core.Capabilities.test(Capabilities.java:1221)
+	weka.core.Capabilities.test(Capabilities.java:1138)
+	weka.core.Capabilities.testWithFail(Capabilities.java:1468)
+	weka.clusterers.FilteredClusterer.buildClusterer(FilteredClusterer.java:349)
+	weka.gui.explorer.ClustererPanel$17.run(ClustererPanel.java:957)
+
+	at weka.core.Capabilities.test(Capabilities.java:1095)
+	at weka.core.Capabilities.test(Capabilities.java:974)
+	at weka.core.Capabilities.test(Capabilities.java:1221)
+	at weka.core.Capabilities.test(Capabilities.java:1138)
+	at weka.core.Capabilities.testWithFail(Capabilities.java:1468)
+	at weka.clusterers.FilteredClusterer.buildClusterer(FilteredClusterer.java:349)
+	at weka.gui.explorer.ClustererPanel$17.run(ClustererPanel.java:957)
+2020-04-15 02:22:20 weka.gui.explorer.ClustererPanel$17 run
+INFO: weka.clusterers.SimpleKMeans: Cannot handle string attributes!
+Exception in thread "AWT-EventQueue-0" java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	java.base/java.util.Objects.checkIndex(Unknown Source)
+	java.base/java.util.ArrayList.get(Unknown Source)
+	weka.core.Attribute.value(Attribute.java:778)
+	weka.gui.visualize.ClassPanel.paintNominal(ClassPanel.java:425)
+	weka.gui.visualize.ClassPanel.paintComponent(ClassPanel.java:664)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JSplitPane.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JLayeredPane.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedFPScales(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent._paintImmediately(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintImmediately(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+	java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at weka.core.Attribute.value(Attribute.java:778)
+	at weka.gui.visualize.ClassPanel.paintNominal(ClassPanel.java:425)
+	at weka.gui.visualize.ClassPanel.paintComponent(ClassPanel.java:664)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JSplitPane.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JLayeredPane.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedFPScales(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent._paintImmediately(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintImmediately(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2020-04-15 02:34:11 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Started weka.classifiers.rules.ZeroR
+2020-04-15 02:34:11 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Command: weka.classifiers.rules.ZeroR 
+2020-04-15 02:34:12 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Finished weka.classifiers.rules.ZeroR
+2020-04-15 02:34:41 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Started weka.classifiers.rules.ZeroR
+2020-04-15 02:34:41 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Command: weka.classifiers.rules.ZeroR 
+2020-04-15 02:34:41 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Finished weka.classifiers.rules.ZeroR
+2020-04-15 02:35:22 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Started weka.classifiers.rules.ZeroR
+2020-04-15 02:35:22 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Command: weka.classifiers.rules.ZeroR 
+2020-04-15 02:35:22 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Finished weka.classifiers.rules.ZeroR
+2020-04-15 02:36:22 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Started weka.classifiers.rules.ZeroR
+2020-04-15 02:36:22 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Command: weka.classifiers.rules.ZeroR 
+2020-04-15 02:36:22 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Finished weka.classifiers.rules.ZeroR
+2020-04-15 02:36:36 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Started weka.classifiers.rules.ZeroR
+2020-04-15 02:36:36 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Command: weka.classifiers.rules.ZeroR 
+2020-04-15 02:36:36 weka.gui.explorer.ClassifierPanel$20 run
+INFO: Finished weka.classifiers.rules.ZeroR
+2020-04-15 02:53:12 weka.gui.explorer.ClustererPanel$17 run
+INFO: Started weka.clusterers.FilteredClusterer
+2020-04-15 02:53:12 weka.gui.explorer.ClustererPanel$17 run
+INFO: Command: weka.clusterers.FilteredClusterer -F "weka.filters.AllFilter " -W weka.clusterers.SimpleKMeans -- -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+weka.core.UnsupportedAttributeTypeException: weka.clusterers.SimpleKMeans: Cannot handle string attributes!
+	weka.core.Capabilities.test(Capabilities.java:1095)
+	weka.core.Capabilities.test(Capabilities.java:974)
+	weka.core.Capabilities.test(Capabilities.java:1221)
+	weka.core.Capabilities.test(Capabilities.java:1138)
+	weka.core.Capabilities.testWithFail(Capabilities.java:1468)
+	weka.clusterers.FilteredClusterer.buildClusterer(FilteredClusterer.java:349)
+	weka.gui.explorer.ClustererPanel$17.run(ClustererPanel.java:957)
+
+	at weka.core.Capabilities.test(Capabilities.java:1095)
+	at weka.core.Capabilities.test(Capabilities.java:974)
+	at weka.core.Capabilities.test(Capabilities.java:1221)
+	at weka.core.Capabilities.test(Capabilities.java:1138)
+	at weka.core.Capabilities.testWithFail(Capabilities.java:1468)
+	at weka.clusterers.FilteredClusterer.buildClusterer(FilteredClusterer.java:349)
+	at weka.gui.explorer.ClustererPanel$17.run(ClustererPanel.java:957)
+2020-04-15 02:53:12 weka.gui.explorer.ClustererPanel$17 run
+INFO: weka.clusterers.SimpleKMeans: Cannot handle string attributes!
+2020-04-15 02:53:25 weka.gui.explorer.ClustererPanel$17 run
+INFO: Started weka.clusterers.FilteredClusterer
+2020-04-15 02:53:25 weka.gui.explorer.ClustererPanel$17 run
+INFO: Command: weka.clusterers.FilteredClusterer -F "weka.filters.AllFilter " -W weka.clusterers.SimpleKMeans -- -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+weka.core.UnsupportedAttributeTypeException: weka.clusterers.SimpleKMeans: Cannot handle string attributes!
+	weka.core.Capabilities.test(Capabilities.java:1095)
+	weka.core.Capabilities.test(Capabilities.java:974)
+	weka.core.Capabilities.test(Capabilities.java:1221)
+	weka.core.Capabilities.test(Capabilities.java:1138)
+	weka.core.Capabilities.testWithFail(Capabilities.java:1468)
+	weka.clusterers.FilteredClusterer.buildClusterer(FilteredClusterer.java:349)
+	weka.gui.explorer.ClustererPanel$17.run(ClustererPanel.java:957)
+
+	at weka.core.Capabilities.test(Capabilities.java:1095)
+	at weka.core.Capabilities.test(Capabilities.java:974)
+	at weka.core.Capabilities.test(Capabilities.java:1221)
+	at weka.core.Capabilities.test(Capabilities.java:1138)
+	at weka.core.Capabilities.testWithFail(Capabilities.java:1468)
+	at weka.clusterers.FilteredClusterer.buildClusterer(FilteredClusterer.java:349)
+	at weka.gui.explorer.ClustererPanel$17.run(ClustererPanel.java:957)
+2020-04-15 02:53:25 weka.gui.explorer.ClustererPanel$17 run
+INFO: weka.clusterers.SimpleKMeans: Cannot handle string attributes!
+Exception in thread "AWT-EventQueue-0" java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	java.base/java.util.Objects.checkIndex(Unknown Source)
+	java.base/java.util.ArrayList.get(Unknown Source)
+	weka.core.Attribute.value(Attribute.java:778)
+	weka.gui.visualize.ClassPanel.paintNominal(ClassPanel.java:425)
+	weka.gui.visualize.ClassPanel.paintComponent(ClassPanel.java:664)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JSplitPane.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedFPScales(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.paint(Unknown Source)
+	java.desktop/javax.swing.JComponent._paintImmediately(Unknown Source)
+	java.desktop/javax.swing.JComponent.paintImmediately(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	java.desktop/javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+	java.desktop/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+	java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at weka.core.Attribute.value(Attribute.java:778)
+	at weka.gui.visualize.ClassPanel.paintNominal(ClassPanel.java:425)
+	at weka.gui.visualize.ClassPanel.paintComponent(ClassPanel.java:664)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JSplitPane.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintChildren(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintToOffscreen(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedFPScales(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.paint(Unknown Source)
+	at java.desktop/javax.swing.JComponent._paintImmediately(Unknown Source)
+	at java.desktop/javax.swing.JComponent.paintImmediately(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+	at java.desktop/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2020-04-15 02:56:10 weka.gui.explorer.PreprocessPanel$22 run
+INFO: Command: weka.filters.AllFilter 
+2020-04-15 02:56:10 weka.gui.explorer.PreprocessPanel$21 run
+INFO: Base relation is now new-vertical-dataset-weka.filters.AllFilter (100 instances)
+Tester set to: weka.experiment.PairedCorrectedTTester
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+Cancelled
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+Updating experiment property iterator array
+java.io.FileNotFoundException: C:\Program Files\Weka-3-8-4\test.exp (Access is denied)
+	java.base/java.io.FileOutputStream.open0(Native Method)
+	java.base/java.io.FileOutputStream.open(Unknown Source)
+	java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	weka.experiment.Experiment.write(Experiment.java:1194)
+	weka.gui.experiment.SetupPanel.saveExperiment(SetupPanel.java:613)
+	weka.gui.experiment.SetupPanel.access$100(SetupPanel.java:67)
+	weka.gui.experiment.SetupPanel$4.actionPerformed(SetupPanel.java:219)
+	java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	java.desktop/java.awt.Component.processEvent(Unknown Source)
+	java.desktop/java.awt.Container.processEvent(Unknown Source)
+	java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at weka.experiment.Experiment.write(Experiment.java:1194)
+	at weka.gui.experiment.SetupPanel.saveExperiment(SetupPanel.java:613)
+	at weka.gui.experiment.SetupPanel.access$100(SetupPanel.java:67)
+	at weka.gui.experiment.SetupPanel$4.actionPerformed(SetupPanel.java:219)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+java.io.FileNotFoundException: C:\Program Files\Weka-3-8-4\test_1.exp (Access is denied)
+	java.base/java.io.FileOutputStream.open0(Native Method)
+	java.base/java.io.FileOutputStream.open(Unknown Source)
+	java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	weka.experiment.Experiment.write(Experiment.java:1194)
+	weka.gui.experiment.SetupPanel.saveExperiment(SetupPanel.java:613)
+	weka.gui.experiment.SetupPanel.access$100(SetupPanel.java:67)
+	weka.gui.experiment.SetupPanel$4.actionPerformed(SetupPanel.java:219)
+	java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	java.desktop/java.awt.Component.processEvent(Unknown Source)
+	java.desktop/java.awt.Container.processEvent(Unknown Source)
+	java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	java.base/java.security.AccessController.doPrivileged(Native Method)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at weka.experiment.Experiment.write(Experiment.java:1194)
+	at weka.gui.experiment.SetupPanel.saveExperiment(SetupPanel.java:613)
+	at weka.gui.experiment.SetupPanel.access$100(SetupPanel.java:67)
+	at weka.gui.experiment.SetupPanel$4.actionPerformed(SetupPanel.java:219)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Running experiment: Runs from: 1 to: 10
+Datasets: D:\Projects\phd\Anil Sir\data-set\new-vertical-dataset.csv
+Custom property iterator: off
+ResultProducer: RandomSplitResultProducer: -P 66.0 -W weka.experiment.ClassifierSplitEvaluator --: <null Instances>
+ResultListener: weka.experiment.InstancesResultListener@576cd80e
+
+Writing experiment copy
+Reading experiment copy
+Made experiment copy
+2020-04-15 02:59:34 weka.gui.experiment.RunPanel logMessage
+INFO: Started
+RandomSplitResultProducer: setting additional measures for split evaluator
+java.io.FileNotFoundException: weka_experiment7901252346223126236.arff (Access is denied)
+	java.base/java.io.FileOutputStream.open0(Native Method)
+	java.base/java.io.FileOutputStream.open(Unknown Source)
+	java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	weka.experiment.InstancesResultListener.preProcess(InstancesResultListener.java:119)
+	weka.experiment.RandomSplitResultProducer.preProcess(RandomSplitResultProducer.java:294)
+	weka.experiment.Experiment.initialize(Experiment.java:435)
+	weka.gui.experiment.RunPanel$ExperimentRunner.run(RunPanel.java:155)
+
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at weka.experiment.InstancesResultListener.preProcess(InstancesResultListener.java:119)
+	at weka.experiment.RandomSplitResultProducer.preProcess(RandomSplitResultProducer.java:294)
+	at weka.experiment.Experiment.initialize(Experiment.java:435)
+	at weka.gui.experiment.RunPanel$ExperimentRunner.run(RunPanel.java:155)
+weka_experiment7901252346223126236.arff (Access is denied)
+Done...
+2020-04-15 03:03:37 weka.gui.explorer.PreprocessPanel$22 run
+INFO: Command: weka.filters.supervised.attribute.AddClassification -W "weka.classifiers.rules.ZeroR "
+2020-04-15 03:03:37 weka.gui.explorer.PreprocessPanel$21 run
+INFO: Base relation is now new-vertical-dataset-weka.filters.AllFilter-weka.filters.supervised.attribute.AddClassification-Wweka.classifiers.rules.ZeroR (100 instances)
